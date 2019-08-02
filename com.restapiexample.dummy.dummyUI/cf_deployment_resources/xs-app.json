@@ -1,0 +1,20 @@
+{
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "none",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+   {
+    "source":"/destinations",
+    "target": "/",
+    "destination":"dest_dummyUI",
+    "httpMethods": ["POST"]
+    },
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "localDir": "."
+    }
+  ]
+}

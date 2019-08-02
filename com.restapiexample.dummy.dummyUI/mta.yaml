@@ -1,0 +1,23 @@
+ID: dummyUI
+_schema-version: 3.0.0
+description: Enter description here
+version: 0.0.1
+
+modules:
+ - name: dummyUI
+   type: nodejs
+   path: dist
+   parameters:
+      disk-quota: 512M
+      memory: 512M
+   requires:
+    - name: dest_dummyUI
+      group: destinations
+      properties:
+         name: dest_dummyUI
+         url: '~{url}'
+
+resources:
+ - name: dest_dummyUI
+   properties:
+      url: http://dummy.restapiexample.com/

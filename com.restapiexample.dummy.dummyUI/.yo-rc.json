@@ -1,0 +1,8 @@
+{
+  "generator-easy-ui5": {
+    "projectname": "dummyUI",
+    "namespace": "com.restapiexample.dummy",
+    "viewtype": "XML",
+    "viewname": "MainView"
+  }
+}

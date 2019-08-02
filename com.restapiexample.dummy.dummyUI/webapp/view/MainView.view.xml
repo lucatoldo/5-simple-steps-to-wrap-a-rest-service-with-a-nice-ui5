@@ -1,0 +1,22 @@
+ <mvc:View controllerName="com.restapiexample.dummy.dummyUI.controller.MainView"
+	displayBlock="true"
+        xmlns:form="sap.ui.layout.form"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Create Employee on dummy.restapiexample.com">
+				<content>
+<form:SimpleForm editable="true">
+ <Label text="Input comma separated Name,Income,Age (e.g. JaneDoe,100k,25)"/> 
+ <TextArea id="inputValue" value="{/inputValue}" /> 
+ <Label text="click on the button to create employee and see result "/>
+ <Button text="Tell Me" press="onPress" />
+ <Label text="Result" /> 
+ <Text id ="result" text=" " />
+</form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View> 
