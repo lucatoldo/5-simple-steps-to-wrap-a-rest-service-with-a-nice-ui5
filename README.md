@@ -20,6 +20,9 @@ In order to use it simply clone it and then simply execute
 npm run deploy:cf
 ````
 
+As written in the blog, if you get errors like "Unsupported resource type "" for platform type "CLOUD-FOUNDRY" then
+simply use the mta application builder instead of the npm approach.
+
 This will deliver you a UI on cloudfoundry in your org and space and a URL you can access that will POST to the 
 dummy.restapyexample.com
 
